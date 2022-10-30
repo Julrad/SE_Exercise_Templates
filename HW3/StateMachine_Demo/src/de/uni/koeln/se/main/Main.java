@@ -4,12 +4,17 @@ import java.util.Scanner;
 
 import de.uni.koeln.se.state.Elevator;
 import de.uni.koeln.se.state.Elv_States;
+import de.uni.koeln.se.state.Elevator;
+import de.uni.koeln.se.state.Elv_States;
+
+import de.uni.koeln.se.state.Elevator;
+import de.uni.koeln.se.state.Elv_States;
 
 public class Main {
 	public static void main(String[] args) 
 	{
 		
-		 Scanner in = new Scanner(System.in); 
+		Scanner in = new Scanner(System.in); 
 		
 		System.out.println("Current Floor is 5"); 
 
