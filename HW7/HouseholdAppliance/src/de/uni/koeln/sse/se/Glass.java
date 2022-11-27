@@ -55,8 +55,8 @@ public class Glass implements HouseholdItem{
 		this.name = name;
 	}
 
+	public void accept(Visitor v) {
+		v.visitGlass(this);
+	}
 	
-	
-
-
 }

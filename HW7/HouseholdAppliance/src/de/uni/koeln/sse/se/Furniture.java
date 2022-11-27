@@ -65,5 +65,7 @@ public class Furniture implements HouseholdItem{
 	public void setName(String name) {
 		this.name = name;}
 
-	
+	public void accept(Visitor v) {
+		v.visitFurniture(this);
+	}
 }

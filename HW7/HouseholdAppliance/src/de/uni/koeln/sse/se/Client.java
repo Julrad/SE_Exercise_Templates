@@ -27,7 +27,7 @@ public static void main(String[] args) {
         List<HouseholdItem> namesList = Arrays.asList(microwaveOven,tv,wineGlass,coffeeTable,bed,cupboard );
         householdItmes.addAll(namesList);
 		
-  
+        Behavior b = new Behavior();
+        b.behavior(namesList);
 }
-
 }
