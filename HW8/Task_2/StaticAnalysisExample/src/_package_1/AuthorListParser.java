@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Locale;
 import java.util.Objects;
@@ -181,14 +180,17 @@ public class AuthorListParser {
             Token token = getToken();
             switch (token) {
                 case EOF:
+                	break;
                 case AND:
                     continueLoop = false;
                     break;
                 case COMMA:
                     if (commaFirst < 0) {
                         commaFirst = tokens.size();
+                        break;
                     } else if (commaSecond < 0) {
                         commaSecond = tokens.size();
+                        break;
                     }
          
                 case WORD:

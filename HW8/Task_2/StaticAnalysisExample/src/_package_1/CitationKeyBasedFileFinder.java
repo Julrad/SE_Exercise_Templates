@@ -91,7 +91,9 @@ public class CitationKeyBasedFileFinder {
             if (Files.exists(directory)) {
                 try (Stream<Path> pathStream = Files.find(directory, Integer.MAX_VALUE, isFileWithCorrectExtension, FileVisitOption.FOLLOW_LINKS)) {
                     result.addAll(pathStream.collect(Collectors.toSet()));
-                } catch (UncheckedIOException e) {}
+                } catch (UncheckedIOException e) {
+                	System.out.println(e.getMessage());
+                }
                 }
             }
         
